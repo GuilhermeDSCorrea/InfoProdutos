@@ -1,0 +1,8 @@
+{
+  "name": "Master Testo Natural",
+  "description": "Protocolo natural de vitalidade masculina para máxima performance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

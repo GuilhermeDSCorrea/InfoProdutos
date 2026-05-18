@@ -46,19 +46,19 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 overflow-x-hidden selection:bg-amber-200">
+    <div className="min-h-screen bg-white text-slate-900 overflow-x-hidden selection:bg-blue-200">
       {/* 1. HERO SECTION - DARK */}
       <section className="relative min-h-[90vh] flex flex-col items-center justify-center bg-[#050505] text-white px-4 py-20 overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-20">
-          <div className="absolute -top-24 -left-24 w-96 h-96 bg-amber-600 rounded-full blur-[120px]" />
-          <div className="absolute top-1/2 -right-24 w-80 h-80 bg-orange-700 rounded-full blur-[100px]" />
+          <div className="absolute -top-24 -left-24 w-96 h-96 bg-blue-600 rounded-full blur-[120px]" />
+          <div className="absolute top-1/2 -right-24 w-80 h-80 bg-blue-700 rounded-full blur-[100px]" />
         </div>
 
         <div className="relative z-10 max-w-4xl w-full text-center">
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="inline-block px-4 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 font-bold text-xs md:text-sm tracking-widest uppercase mb-8"
+            className="inline-block px-4 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 font-bold text-xs md:text-sm tracking-widest uppercase mb-8"
           >
             MASTER TESTO NATURAL
           </motion.div>
@@ -69,7 +69,7 @@ export default function App() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="text-4xl md:text-6xl lg:text-7xl font-black md:leading-[1.1] tracking-tight mb-6"
           >
-            O protocolo natural que está ajudando homens comuns a recuperarem <span className="text-amber-500">disposição, foco e vitalidade</span> sem gastar fortunas
+            O protocolo natural que está ajudando homens comuns a recuperarem <span className="text-blue-500">disposição, foco e vitalidade</span> sem gastar fortunas
           </motion.h1>
 
           <motion.div 
@@ -115,8 +115,8 @@ export default function App() {
               "A mente fica lenta.",
               "A disposição desaparece."
             ].map((text, i) => (
-              <motion.div key={i} variants={fadeInUp} className="flex items-center gap-4 p-4 border-l-4 border-amber-500 bg-slate-50 rounded-r-lg">
-                <AlertCircle className="text-amber-500 shrink-0" />
+              <motion.div key={i} variants={fadeInUp} className="flex items-center gap-4 p-4 border-l-4 border-blue-500 bg-slate-50 rounded-r-lg">
+                <AlertCircle className="text-blue-500 shrink-0" />
                 <p className="text-lg md:text-xl font-medium text-slate-700">{text}</p>
               </motion.div>
             ))}
@@ -185,7 +185,7 @@ export default function App() {
                 transition={{ delay: i * 0.1 }}
                 className="flex items-start gap-4 p-6 bg-white rounded-2xl shadow-sm border border-slate-100"
               >
-                <item.icon className="text-amber-600 shrink-0 mt-1" />
+                <item.icon className="text-blue-600 shrink-0 mt-1" />
                 <p className="text-lg font-bold text-slate-800 leading-snug tracking-tight">⚠ {item.text}</p>
               </motion.div>
             ))}
@@ -203,7 +203,7 @@ export default function App() {
 
       {/* 4. THE SOLUTION - DARK */}
       <section className="py-24 px-4 bg-slate-900 text-white overflow-hidden relative">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(245,158,11,0.1)_0%,transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(37,99,235,0.1)_0%,transparent_50%)]" />
         <div className="max-w-4xl mx-auto relative z-10 text-center">
           <motion.div 
             initial="hidden"
@@ -211,7 +211,7 @@ export default function App() {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            <p className="text-amber-500 font-bold mb-6 tracking-widest uppercase">FOI POR ISSO QUE CRIAMOS O</p>
+            <p className="text-blue-500 font-bold mb-6 tracking-widest uppercase">FOI POR ISSO QUE CRIAMOS O</p>
             <h2 className="text-5xl md:text-7xl font-black mb-12 tracking-tighter">MASTER TESTO NATURAL</h2>
             <p className="text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
               Um protocolo digital simples, direto e natural para homens que querem recuperar vitalidade, disposição e desempenho.
@@ -232,7 +232,7 @@ export default function App() {
                 transition={{ delay: i * 0.2 }}
                 className="p-8 border border-white/10 bg-white/5 rounded-2xl backdrop-blur-sm"
               >
-                <p className="text-xl font-black text-amber-500 uppercase">{text}</p>
+                <p className="text-xl font-black text-blue-500 uppercase">{text}</p>
               </motion.div>
             ))}
           </div>
@@ -272,7 +272,7 @@ export default function App() {
                 transition={{ delay: i * 0.1 }}
                 className="flex items-center gap-4 p-8 bg-slate-50 border border-slate-100 rounded-3xl"
               >
-                <div className="w-12 h-12 rounded-2xl bg-amber-500 flex items-center justify-center shrink-0">
+                <div className="w-12 h-12 rounded-2xl bg-blue-600 flex items-center justify-center shrink-0">
                   <item.icon className="text-white w-6 h-6" />
                 </div>
                 <p className="text-lg md:text-xl font-bold text-slate-800 leading-snug">
@@ -285,7 +285,7 @@ export default function App() {
       </section>
 
       {/* 6. IMAGINE - GRADIENT */}
-      <section className="py-24 px-4 bg-gradient-to-br from-amber-500 to-orange-600 text-white overflow-hidden">
+      <section className="py-24 px-4 bg-gradient-to-br from-blue-600 to-indigo-700 text-white overflow-hidden">
         <div className="max-w-4xl mx-auto">
           <motion.div 
             initial="hidden"
@@ -362,11 +362,11 @@ export default function App() {
 
       {/* 8. OFFER SECTION - SPECIAL CALLOUT */}
       <section id="offer" className="py-24 px-4 bg-white">
-        <div className="max-w-3xl mx-auto bg-slate-900 rounded-[3rem] p-8 md:p-16 text-center text-white border-8 border-amber-500/20 shadow-2xl relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(245,158,11,0.15)_0%,transparent_70%)]" />
+        <div className="max-w-3xl mx-auto bg-slate-900 rounded-[3rem] p-8 md:p-16 text-center text-white border-8 border-blue-500/20 shadow-2xl relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(37,99,235,0.15)_0%,transparent_70%)]" />
           
           <div className="relative z-10">
-            <span className="inline-block px-6 py-2 rounded-full bg-amber-500 text-slate-900 font-extrabold text-sm tracking-widest uppercase mb-8">
+            <span className="inline-block px-6 py-2 rounded-full bg-blue-600 text-slate-900 font-extrabold text-sm tracking-widest uppercase mb-8">
               OFERTA PROMOCIONAL DE HOJE
             </span>
 
@@ -374,13 +374,13 @@ export default function App() {
             <h3 className="text-2xl md:text-3xl font-black mb-2 uppercase tracking-tighter">por apenas</h3>
             
             <div className="flex flex-col items-center mb-8">
-              <p className="text-4xl md:text-6xl font-black text-amber-500">
+              <p className="text-4xl md:text-6xl font-black text-blue-500">
                 12x de <span className="text-5xl md:text-8xl">R$ 2,79</span>
               </p>
               <p className="text-2xl md:text-4xl font-bold text-slate-300 mt-2">ou R$ 27,90 à vista</p>
             </div>
 
-            <p className="text-xl md:text-2xl text-amber-400 font-black mb-12 italic">
+            <p className="text-xl md:text-2xl text-blue-400 font-black mb-12 italic">
               Sim… menos do que você provavelmente gasta em um lanche.
             </p>
 
@@ -390,7 +390,7 @@ export default function App() {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="group relative inline-flex items-center justify-center gap-3 px-10 py-6 bg-amber-500 hover:bg-amber-400 text-slate-900 font-black text-xl md:text-3xl rounded-3xl transition-all shadow-[0_0_40px_rgba(245,158,11,0.3)]"
+              className="group relative inline-flex items-center justify-center gap-3 px-10 py-6 bg-blue-600 hover:bg-blue-500 text-slate-900 font-black text-xl md:text-3xl rounded-3xl transition-all shadow-[0_0_40px_rgba(37,99,235,0.3)]"
             >
               🔥 QUERO MEU ACESSO AGORA!
               <ArrowRight className="w-8 h-8 md:w-10 md:h-10 group-hover:translate-x-1 transition-transform" />
@@ -398,11 +398,11 @@ export default function App() {
 
             <div className="flex items-center justify-center gap-8 mt-12 text-slate-400 font-bold uppercase text-xs tracking-widest">
               <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4 text-amber-500" />
+                <Clock className="w-4 h-4 text-blue-500" />
                 <span>Acesso Imediato</span>
               </div>
               <div className="flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-amber-500" />
+                <ShieldCheck className="w-4 h-4 text-blue-500" />
                 <span>Seguro & Criptografado</span>
               </div>
             </div>
@@ -435,7 +435,7 @@ export default function App() {
       <section className="py-24 px-4 bg-white">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12 bg-slate-50 p-12 rounded-[3rem] border border-slate-200">
           <div className="shrink-0">
-            <ShieldCheck className="w-32 h-32 md:w-48 md:h-48 text-amber-500" />
+            <ShieldCheck className="w-32 h-32 md:w-48 md:h-48 text-blue-600" />
           </div>
           <div className="text-center md:text-left">
             <h2 className="text-4xl md:text-6xl font-black text-slate-900 mb-6 uppercase tracking-tighter">VOCÊ NÃO TEM RISCO</h2>
@@ -472,7 +472,7 @@ export default function App() {
                 transition={{ delay: i * 0.1 }}
                 className="flex items-center gap-4 p-8 bg-white rounded-3xl border border-slate-200 shadow-sm"
               >
-                <CheckCircle2 className="text-amber-500 shrink-0 w-8 h-8" />
+                <CheckCircle2 className="text-blue-500 shrink-0 w-8 h-8" />
                 <p className="text-xl font-bold text-slate-800 leading-tight">✔ {text}</p>
               </motion.div>
             ))}
@@ -482,18 +482,18 @@ export default function App() {
 
       {/* 12. FINAL DECISION - DARK */}
       <section className="py-24 px-4 bg-slate-900 text-white text-center relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_50%,rgba(245,158,11,0.05)_0%,transparent_60%)]" />
+        <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_50%,rgba(37,99,235,0.05)_0%,transparent_60%)]" />
         
         <div className="max-w-4xl mx-auto relative z-10">
-          <h2 className="text-5xl md:text-8xl font-black mb-12 tracking-tighter italic uppercase text-amber-500">A DECISÃO É SUA</h2>
+          <h2 className="text-5xl md:text-8xl font-black mb-12 tracking-tighter italic uppercase text-blue-500">A DECISÃO É SUA</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left mb-20">
             <div className="p-8 border-2 border-white/10 rounded-3xl bg-white/5 opacity-50 grayscale">
               <p className="text-2xl font-black mb-4 uppercase tracking-wider text-slate-500 italic underline underline-offset-8 decoration-red-500">Você pode continuar adiando…</p>
               <p className="text-xl text-slate-400 font-medium">E aceitar a queda de energia como algo “normal”.</p>
             </div>
-            <div className="p-8 border-2 border-amber-500/50 rounded-3xl bg-amber-500/5 shadow-[0_0_50px_rgba(245,158,11,0.1)]">
-              <p className="text-2xl font-black mb-4 uppercase tracking-wider text-amber-400 italic underline underline-offset-8">OU</p>
+            <div className="p-8 border-2 border-blue-500/50 rounded-3xl bg-blue-500/5 shadow-[0_0_50px_rgba(37,99,235,0.1)]">
+              <p className="text-2xl font-black mb-4 uppercase tracking-wider text-blue-400 italic underline underline-offset-8">OU</p>
               <p className="text-xl text-slate-100 font-bold">Pode começar hoje mesmo a mudar sua rotina com um método simples, acessível e natural.</p>
             </div>
           </div>
@@ -516,7 +516,7 @@ export default function App() {
             
             <div className="mb-16">
               <p className="text-7xl md:text-9xl font-black text-slate-900 tracking-tight">R$ 27,90</p>
-              <p className="text-xl md:text-2xl text-amber-600 font-black mt-4 uppercase tracking-[0.2em]">Oferta por tempo limitado.</p>
+              <p className="text-xl md:text-2xl text-blue-600 font-black mt-4 uppercase tracking-[0.2em]">Oferta por tempo limitado.</p>
             </div>
 
             <motion.a 
@@ -525,7 +525,7 @@ export default function App() {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-4 px-12 py-8 bg-amber-500 hover:bg-amber-400 text-slate-900 font-black text-2xl md:text-4xl rounded-full transition-all shadow-[0_20px_50px_rgba(245,158,11,0.4)]"
+              className="inline-flex items-center gap-4 px-12 py-8 bg-blue-600 hover:bg-blue-500 text-slate-900 font-black text-2xl md:text-4xl rounded-full transition-all shadow-[0_20px_50px_rgba(37,99,235,0.4)]"
             >
               QUERO O PROTOCOLO COMPLETO!
               <ArrowRight className="w-10 h-10" />
@@ -551,7 +551,7 @@ export default function App() {
               href="https://pay.kiwify.com.br/fkqFCov"
               target="_blank"
               rel="noopener noreferrer"
-              className="pointer-events-auto w-full flex items-center justify-center py-5 bg-amber-500 text-slate-900 font-black text-xl rounded-2xl shadow-2xl"
+              className="pointer-events-auto w-full flex items-center justify-center py-5 bg-blue-600 text-slate-900 font-black text-xl rounded-2xl shadow-2xl"
             >
               GARANTIR ACESSO - R$ 27,90
             </a>

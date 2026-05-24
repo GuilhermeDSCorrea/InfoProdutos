@@ -11,7 +11,11 @@ import {
   ArrowRight,
   ShieldCheck,
   Clock,
-  ChevronDown
+  ChevronDown,
+  Gift,
+  Moon,
+  BookOpen,
+  CheckSquare
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -60,7 +64,7 @@ export default function App() {
             animate={{ opacity: 1, scale: 1 }}
             className="inline-block px-4 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 font-bold text-xs md:text-sm tracking-widest uppercase mb-8"
           >
-            MASTER TESTO NATURAL
+            🔥 PROTOCOLO ALIMENTAR 100% NATURAL
           </motion.div>
           
           <motion.h1 
@@ -69,8 +73,12 @@ export default function App() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="text-4xl md:text-6xl lg:text-7xl font-black md:leading-[1.1] tracking-tight mb-6"
           >
-            O protocolo natural que está ajudando homens comuns a recuperarem <span className="text-amber-500">disposição, foco e vitalidade</span> sem gastar fortunas
+            O protocolo <span className="text-amber-500 underline decoration-amber-500/30">alimentar</span> natural baseado em <span className="text-amber-500">informações científicas atualizadas</span> que está ajudando homens comuns a recuperarem disposição, foco e vitalidade sem gastar fortunas
           </motion.h1>
+
+          <p className="mt-6 text-slate-400 md:text-lg max-w-2xl mx-auto font-medium">
+            Uma abordagem baseada em alimentos poderosos e estratégias simples do dia a dia, livre de suplementos inúteis ou fármacos prejudiciais.
+          </p>
 
           <motion.div 
             initial={{ opacity: 0 }}
@@ -80,6 +88,97 @@ export default function App() {
           >
             <ChevronDown className="w-8 h-8 text-slate-500" />
           </motion.div>
+        </div>
+      </section>
+
+      {/* 2. EQUATION SECTION (SEGUNDA PÁGINA) */}
+      <section className="py-12 px-4 bg-slate-50 border-b border-slate-200">
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-white border-2 border-amber-500 rounded-3xl p-6 md:p-8 shadow-xl shadow-amber-500/5 relative overflow-hidden">
+            <div className="absolute top-0 right-0 bg-amber-500 text-slate-950 px-4 py-1.5 text-[9px] md:text-xs font-black tracking-widest uppercase rounded-bl-xl">
+              FÓRMULA DA MUDANÇA
+            </div>
+            
+            <p className="text-center text-xs text-slate-500 font-extrabold tracking-widest uppercase mb-6">
+              SUA VITALIDADE RESTAURADA EM UMA ÚNICA SOLUÇÃO COMPLETA:
+            </p>
+
+            <div className="flex flex-col xl:flex-row items-center justify-between gap-4 xl:gap-2 text-center">
+              
+              {/* ITEM 1 */}
+              <div className="bg-slate-50 px-4 py-4 rounded-2xl border border-slate-100 flex items-center gap-3 w-full xl:w-auto justify-center xl:justify-start">
+                <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center shrink-0">
+                  <Gift className="w-5 h-5 text-amber-500" />
+                </div>
+                <div className="text-left animate-pulse">
+                  <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">01. PRINCIPAL</p>
+                  <p className="text-sm md:text-base font-black text-slate-950">Protocolo Alimentar</p>
+                </div>
+              </div>
+
+              {/* PLUS */}
+              <div className="text-2xl font-black text-amber-500 select-none">
+                +
+              </div>
+
+              {/* ITEM 2 */}
+              <div className="bg-slate-50 px-4 py-4 rounded-2xl border border-slate-100 flex items-center gap-3 w-full xl:w-auto justify-center xl:justify-start">
+                <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center shrink-0">
+                  <Moon className="w-5 h-5 text-amber-500" />
+                </div>
+                <div className="text-left">
+                  <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">02. BÔNUS GRÁTIS</p>
+                  <p className="text-sm md:text-base font-black text-slate-950">Protocolo de Sono</p>
+                </div>
+              </div>
+
+              {/* PLUS */}
+              <div className="text-2xl font-black text-amber-500 select-none">
+                +
+              </div>
+
+              {/* ITEM 3 */}
+              <div className="bg-slate-50 px-4 py-4 rounded-2xl border border-slate-100 flex items-center gap-3 w-full xl:w-auto justify-center xl:justify-start">
+                <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center shrink-0">
+                  <CheckCircle2 className="w-5 h-5 text-amber-500" />
+                </div>
+                <div className="text-left">
+                  <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">03. COMPLEMENTO</p>
+                  <p className="text-sm md:text-base font-black text-slate-950">Guia de Hábitos</p>
+                </div>
+              </div>
+
+              {/* PLUS */}
+              <div className="text-2xl font-black text-amber-500 select-none">
+                +
+              </div>
+
+              {/* ITEM 4 */}
+              <div className="bg-slate-50 px-4 py-4 rounded-2xl border border-slate-100 flex items-center gap-3 w-full xl:w-auto justify-center xl:justify-start p-1.5 ring-2 ring-amber-500/20">
+                <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center shrink-0">
+                  <CheckSquare className="w-5 h-5 text-amber-500" />
+                </div>
+                <div className="text-left">
+                  <p className="text-[10px] text-amber-500 font-extrabold uppercase tracking-widest flex items-center gap-1">
+                    <Gift className="w-2.5 h-2.5" /> 04. NOVO BÔNUS
+                  </p>
+                  <p className="text-sm md:text-base font-black text-slate-950">Checklist Diário</p>
+                </div>
+              </div>
+
+              {/* EQUALS */}
+              <div className="text-3xl font-black text-amber-500 select-none mx-1">
+                =
+              </div>
+
+              {/* TOTAL PRICE */}
+              <div className="bg-amber-500 text-slate-950 px-6 py-4 rounded-2xl flex flex-col items-center justify-center w-full xl:w-auto shrink-0 shadow-lg shadow-amber-500/20">
+                <p className="text-[9px] font-black uppercase tracking-widest text-slate-950/75">POR APENAS</p>
+                <p className="text-xl md:text-2xl font-black">R$ 19,90</p>
+              </div>
+
+            </div>
+          </div>
         </div>
       </section>
 
@@ -214,7 +313,7 @@ export default function App() {
             <p className="text-amber-500 font-bold mb-6 tracking-widest uppercase">FOI POR ISSO QUE CRIAMOS O</p>
             <h2 className="text-5xl md:text-7xl font-black mb-12 tracking-tighter">MASTER TESTO NATURAL</h2>
             <p className="text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-              Um protocolo digital simples, direto e natural para homens que querem recuperar vitalidade, disposição e desempenho.
+              Um protocolo <span className="text-amber-400 font-extrabold underline">alimentar</span> digital simples, direto e natural, 100% embasado em <span className="text-amber-400 font-bold">informações científicas atualizadas</span>, para homens que querem recuperar vitalidade, disposição e desempenho.
             </p>
           </motion.div>
 
@@ -242,7 +341,7 @@ export default function App() {
             whileInView={{ opacity: 1 }}
             className="mt-16 text-xl md:text-2xl font-medium text-slate-400"
           >
-            Apenas estratégias práticas que você consegue aplicar na rotina.
+            Apenas estratégias práticas alimentares que você consegue aplicar facilmente na sua rotina diária.
           </motion.p>
         </div>
       </section>
@@ -258,11 +357,11 @@ export default function App() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-4">
             {[
-              { icon: Zap, text: "Os hábitos que estão destruindo sua energia sem você perceber" },
-              { icon: Brain, text: "Estratégias naturais para melhorar disposição física e mental" },
-              { icon: Dumbbell, text: "Como aumentar performance e constância nos treinos" },
-              { icon: Target, text: "Ajustes simples que favorecem vitalidade masculina" },
-              { icon: TrendingUp, text: "O passo a passo completo para aplicar imediatamente" }
+              { icon: Zap, text: "Os hábitos ocultos e erros alimentares que sabotam sua energia sem você perceber" },
+              { icon: Brain, text: "Estratégias alimentares naturais sustentadas por informações científicas atualizadas" },
+              { icon: Dumbbell, text: "Como usar alimentos comuns e acessíveis para aumentar a disposição para treinar" },
+              { icon: Target, text: "Ajustes nutricionais práticos que favorecem a verdadeira vitalidade masculina" },
+              { icon: TrendingUp, text: "O passo a passo alimentar completo e estruturado para aplicar imediatamente" }
             ].map((item, i) => (
               <motion.div 
                 key={i}
@@ -280,6 +379,132 @@ export default function App() {
                 </p>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 5.5 SUPER BONUS SECTION - HIGH CONTRAST DARK WITH AMBER ACCENTS */}
+      <section className="py-24 px-4 bg-slate-950 text-white relative overflow-hidden border-t border-slate-800">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/5 rounded-full blur-[100px] pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-amber-600/5 rounded-full blur-[100px] pointer-events-none" />
+        
+        <div className="max-w-6xl mx-auto relative z-10">
+          <div className="text-center mb-16">
+            <motion.div 
+              initial={{ scale: 0.9, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              viewport={{ once: true }}
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 font-extrabold text-xs tracking-widest uppercase mb-6"
+            >
+              <Gift className="w-4 h-4 text-amber-400" /> BÔNUS EXCLUSIVOS (100% GRATUITOS)
+            </motion.div>
+            
+            <h2 className="text-3xl md:text-5xl font-black mb-6 tracking-tight leading-tight">
+              E VOCÊ LEVA INTEIRAMENTE DE <span className="text-amber-500 underline decoration-amber-500/30">GRAÇA</span>:
+            </h2>
+            <p className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto font-medium">
+              A ciência moderna comprova: alimentação de alta performance e hábitos integrados andam de mãos dadas. Todos os materiais são 100% fundamentados em estudos científicos atualizados para garantir a sua máxima segurança.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            {/* BONUS A: MANUAL DE SAÚDE DO SONO */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="bg-slate-900 border border-slate-800 rounded-[2rem] p-8 relative flex flex-col justify-between shadow-xl hover:border-amber-500/30 transition-all group"
+            >
+              <div className="absolute top-4 right-4 text-[10px] font-black text-amber-400 bg-amber-400/10 px-2.5 py-1 rounded-full border border-amber-400/20">
+                100% GRÁTIS
+              </div>
+              
+              <div>
+                <div className="w-14 h-14 bg-amber-500/10 rounded-2xl flex items-center justify-center shrink-0 border border-amber-500/20 shadow-inner group-hover:scale-110 transition-transform mb-6">
+                  <Moon className="w-7 h-7 text-amber-500" />
+                </div>
+                
+                <h3 className="text-xl md:text-2xl font-black text-white mb-3">
+                  a) Manual de Saúde do Sono
+                </h3>
+                <p className="text-slate-400 text-sm md:text-base leading-relaxed mb-6 font-medium">
+                  Regule o seu ciclo circadiano de forma totalmente natural, durma mais rápido e tenha um sono profundo restaurador essencial para a sua regeneração.
+                </p>
+              </div>
+
+              <div className="border-t border-slate-800/80 pt-4 mt-auto">
+                <p className="text-xs font-bold text-amber-500 uppercase tracking-widest flex items-center gap-1.5">
+                  <CheckCircle2 className="w-4 h-4 text-amber-500" /> Sono profundo e reparador
+                </p>
+              </div>
+            </motion.div>
+
+            {/* BONUS B: GUIA DE HÁBITOS SAUDÁVEIS */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="bg-slate-900 border border-slate-800 rounded-[2rem] p-8 relative flex flex-col justify-between shadow-xl hover:border-amber-500/30 transition-all group"
+            >
+              <div className="absolute top-4 right-4 text-[10px] font-black text-amber-400 bg-amber-400/10 px-2.5 py-1 rounded-full border border-amber-400/20">
+                100% GRÁTIS
+              </div>
+              
+              <div>
+                <div className="w-14 h-14 bg-amber-500/10 rounded-2xl flex items-center justify-center shrink-0 border border-amber-500/20 shadow-inner group-hover:scale-110 transition-transform mb-6">
+                  <Gift className="w-7 h-7 text-amber-500" />
+                </div>
+                
+                <h3 className="text-xl md:text-2xl font-black text-white mb-3">
+                  b) Guia de Hábitos Saudáveis
+                </h3>
+                <p className="text-slate-400 text-sm md:text-base leading-relaxed mb-6 font-medium">
+                  Construa uma rotina sólida de alta performance com hábitos saudáveis extremamente fáceis de aplicar no dia a dia para blindar sua disposição.
+                </p>
+              </div>
+
+              <div className="border-t border-slate-800/80 pt-4 mt-auto">
+                <p className="text-xs font-bold text-amber-500 uppercase tracking-widest flex items-center gap-1.5">
+                  <CheckCircle2 className="w-4 h-4 text-amber-500" /> Rotina inquebrável
+                </p>
+              </div>
+            </motion.div>
+
+            {/* BONUS C: CHECKLIST DIÁRIO */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              className="bg-slate-900 border border-slate-800 rounded-[2rem] p-8 relative flex flex-col justify-between shadow-xl hover:border-amber-500/30 transition-all group ring-2 ring-amber-500/20"
+            >
+              <div className="absolute top-4 right-4 text-[10px] font-black text-amber-400 bg-amber-400/10 px-2.5 py-1 rounded-full border border-amber-400/20">
+                100% GRÁTIS
+              </div>
+              
+              <div>
+                <div className="w-14 h-14 bg-amber-500/10 rounded-2xl flex items-center justify-center shrink-0 border border-amber-500/20 shadow-inner group-hover:scale-110 transition-transform mb-6">
+                  <CheckSquare className="w-7 h-7 text-amber-500" />
+                </div>
+                
+                <h3 className="text-xl md:text-2xl font-black text-white mb-3">
+                  c) Checklist Diário
+                </h3>
+                <p className="text-slate-400 text-sm md:text-base leading-relaxed mb-6 font-medium">
+                  Um guia prático em formato de checklist de tarefas e rotina diária para você marcar e acompanhar a consistência de cada hábito estipulado.
+                </p>
+              </div>
+
+              <div className="border-t border-slate-800/80 pt-4 mt-auto">
+                <p className="text-xs font-bold text-amber-500 uppercase tracking-widest flex items-center gap-1.5">
+                  <CheckCircle2 className="w-4 h-4 text-amber-500" /> Foco & Constância Máxima
+                </p>
+              </div>
+            </motion.div>
+
           </div>
         </div>
       </section>
@@ -370,6 +595,32 @@ export default function App() {
               OFERTA PROMOCIONAL DE HOJE
             </span>
 
+            <div className="mb-10 p-6 bg-white/5 border border-white/10 rounded-3xl max-w-md mx-auto text-left">
+              <p className="text-amber-400 font-extrabold mb-4 text-xs uppercase tracking-widest">VOCÊ VAI RECEBER IMEDIATAMENTE:</p>
+              <ul className="text-slate-300 space-y-3 font-semibold text-sm">
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-amber-500 shrink-0" />
+                  <span>Protocolo Alimentar Master Testo Natural <span className="text-[10px] text-emerald-400 font-black bg-emerald-500/10 px-2 py-0.5 rounded ml-1 uppercase tracking-wider">Metodologia Científica</span></span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-amber-500 shrink-0" />
+                  <span>Bônus de Graça: a) Manual de Saúde do Sono</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-amber-500 shrink-0" />
+                  <span>Bônus de Graça: b) Guia de Hábitos Saudáveis</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckSquare className="w-4 h-4 text-amber-500 shrink-0" />
+                  <span>Bônus de Graça: c) Checklist Diário da Rotina</span>
+                </li>
+                <li className="flex items-center gap-2 border-t border-white/10 pt-2 mt-1">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
+                  <span>Acesso vitalício e sem qualquer mensalidade</span>
+                </li>
+              </ul>
+            </div>
+
             <p className="text-3xl md:text-4xl font-bold text-slate-400 line-through mb-4">De R$ 97,90</p>
             <h3 className="text-2xl md:text-3xl font-black mb-2 uppercase tracking-tighter">por apenas</h3>
             
@@ -381,7 +632,7 @@ export default function App() {
             </div>
 
             <p className="text-xl md:text-2xl text-amber-400 font-black mb-12 italic">
-              Sim… menos do que você provavelmente gasta em um lanche.
+              Sim… menos do que você provavelmente gasta em um lanche de fim de semana.
             </p>
 
             <motion.a 
@@ -531,8 +782,8 @@ export default function App() {
               <ArrowRight className="w-10 h-10" />
             </motion.a>
 
-            <div className="mt-12 flex flex-col items-center gap-4 text-slate-400 font-bold uppercase text-sm tracking-widest">
-              <p>Acesso imediato + protocolo completo + garantia</p>
+            <div className="mt-12 flex flex-col items-center gap-4 text-slate-500 font-medium uppercase text-xs md:text-sm tracking-widest">
+              <p>Acesso imediato • Protocolo Alimentar • Manual do Sono • Guia de Hábitos • Checklist Diário</p>
             </div>
           </motion.div>
         </div>
